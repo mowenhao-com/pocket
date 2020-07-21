@@ -20,24 +20,14 @@ public class UserController {
 
     @Resource
     private UserService userService;
-    @ResponseBody
-    @PostMapping("/loginAndUserName")
-    R loginAndUserName(UserData userData){
-        System.out.println(userData.getUserName()+"========"+userData.getPassword());
-        System.out.println("-----------");
-        if (userService.loginAndUserName(userData)!=null){
-            System.out.println("登陆成功");
-        }
-        return R.data(userService.loginAndUserName(userData));
 
-
+    @GetMapping("/index")
+    String index(){
+        return "index";
     }
-
     @ResponseBody
-    @PostMapping("/test")
-    void test(){
-        index--;
-        System.out.println(index--);
+    @GetMapping("/index1")
+    String index1(){
+        return "index";
     }
-
 }
