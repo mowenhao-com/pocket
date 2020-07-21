@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @MapperScan({"com.pocket.Mapper"})
 public class PocketApplication {
 //测试git提交
+    //new1
     public static void main(String[] args) {
         SpringApplication.run(PocketApplication.class, args);
     }
