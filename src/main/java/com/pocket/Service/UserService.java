@@ -14,8 +14,8 @@ public class UserService implements UserBiz {
     @Resource
     private UserMapper userMapper;
     @Override
-    public UserData loginAndUserName(UserData userData) {
-        return userMapper.loginAndUserName(userData);
+    public UserData loginAndUserName(String userName , String password) {
+        return userMapper.loginAndUserName(userName,password);
     }
 
     @Override

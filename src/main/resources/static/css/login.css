@@ -1,0 +1,103 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: PaleTurquoise;
+}
+.inputClass{
+	width: 60%;
+	height: 25px;
+	margin: 20px;
+	font-size:15px;
+	
+
+}
+label{
+	 
+}
+.div1{
+	width: 300px;
+	height: 200px;
+	padding: 70px;
+	border: 1px solid #708090;
+	position: absolute;
+	top: 30%;
+	left: 35%;       
+	background-color: aqua;         
+	border-radius: 25px;
+	
+}
+.submit{
+	width: 35%;
+	height: 25px;
+	position: absolute;
+	top: 80%;
+	left: 33%;    
+	border-radius: 25px;
+	background-color: lavender;
+	border:none;
+	outline:none;
+}	
+	
+	
+li{
+	float:right;
+	list-style-type: none;
+}
+.loginButt{
+	width: 130px;
+	height: 40px;
+	border-radius: 25px;
+	background-color: aqua;
+	border:none;
+	outline:none;
+}
+
+
+.div2{
+	width: 400px;
+	height: 200px;
+	padding: 70px;
+	border: 1px solid #708090;
+	position: absolute;
+	top: 30%;
+	left: 35%;       
+	background-color: aqua;         
+	border-radius: 25px;
+	display:none;
+}
+.div3{
+	width: 500px;
+	height: 400px;
+	padding: 70px;
+	border: 1px solid #708090;
+	position: absolute;
+	top: 20%;
+	left: 35%;       
+	background-color: aqua;         
+	border-radius: 25px;
+	display:none;
+	
+}
+.duanxin{
+	width: 90px;
+	height: 30px;
+	position: absolute;
+	top: 56%;
+	left: 57%;    
+	border-radius: 25px;
+	background-color: lavender;
+	border:none;
+	margin: 20px;
+	outline:none;
+}
+
+.duanxininp{
+	width: 40%; 
+	margin: 20px; 
+	height: 30px; 
+	border-radius: 25px;
+	border:none;
+	outline:none;
+}

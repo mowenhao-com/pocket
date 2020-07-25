@@ -5,29 +5,30 @@ import com.pocket.Data.UserData;
 import com.pocket.Service.UserService;
 import com.pocket.Utile.R;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
-@Controller
+@RestController
 @RequestMapping("/user")
 public class UserController {
-
-    private static int index=50;
 
     @Resource
     private UserService userService;
 
-    @GetMapping("/index")
-    String index(){
-        return "index";
-    }
-    @ResponseBody
-    @GetMapping("/index1")
-    String index1(){
-        return "index";
+    //使用账号密码登录
+    @GetMapping("/loginAndUserName")
+    R loginAndUserName(String userName , String password){
+
+        if (userName.isEmpty() || password.isEmpty()){
+            return R.error(400,"账号密码不能为空！");
+        }
+
+        UserData userData = userService.loginAndUserName(userName,password);
+        if (userData!=null){
+            return R.data(userData);
+        }
+
+        return R.error(400,"账号或密码错误！");
     }
 }

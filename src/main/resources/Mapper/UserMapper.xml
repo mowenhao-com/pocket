@@ -4,8 +4,8 @@
 
 
 <!-- 分页查询所有审核信息  -->
-    <select id="loginAndUserName" resultType="UserData" parameterType="UserData">
-          SELECT * FROM sys_user WHERE userName=#{userData.userName} AND `password`=#{userData.password}
+    <select id="loginAndUserName" resultType="UserData" parameterType="hashmap">
+          SELECT * FROM sys_user WHERE userName=#{userName} AND `password`=#{password}
     </select>
 
 </mapper>

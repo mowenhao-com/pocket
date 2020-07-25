@@ -5,6 +5,7 @@ import com.pocket.Utile.R;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserBiz {
-    UserData loginAndUserName(UserData userData);
     int addToken( UserData userData);
+    UserData loginAndUserName(String userName, String password);
+
 }

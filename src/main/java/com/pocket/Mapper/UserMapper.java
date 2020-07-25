@@ -10,6 +10,6 @@ public interface UserMapper {
     //添加token
     int addToken(@Param("userData") UserData userData);
     //使用账号密码登录
-    UserData loginAndUserName(@Param("userData") UserData userData);
+    UserData loginAndUserName(@Param("userName") String userName,@Param("password") String password);
 
 }
