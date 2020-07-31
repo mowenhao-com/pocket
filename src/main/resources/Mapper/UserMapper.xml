@@ -3,7 +3,7 @@
 <mapper namespace="com.pocket.Mapper.UserMapper">
 
 
-<!-- 分页查询所有审核信息  -->
+<!-- 账号密码登录  -->
     <select id="loginAndUserName" resultType="UserData" parameterType="hashmap">
           SELECT * FROM sys_user WHERE userName=#{userName} AND `password`=#{password}
     </select>
